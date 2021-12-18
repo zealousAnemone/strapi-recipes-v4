@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #ecf5fd;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +14,81 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+#recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+  gap: 20px 20px;
+  margin: 0 1rem;
+}
+
+.recipe-card {
+  border-radius: 10px;
+  border: 2px solid #222;
+  box-shadow: -2px 2px 2px #333;
+  padding: 20px;
+  background-color: #faf9f6;
+}
+
+.header {
+  box-shadow: -2px 2px 2px #222;
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #faf9f6;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .header ul li {
+    margin-right: 0;
+  }
+}
+
+.header ul li:hover,
+.home:hover {
+  background-color: #c4e0f9;
+  cursor: pointer;
+}
+
+.category {
+  border-radius: 5px;
+  border: 2px solid #222;
+  padding: 8px 4px;
+  box-shadow: -1px 1px 1px #222;
+}
+
+.recipe-image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.full-recipe {
+  margin: 2rem;
+}
+
+.home {
+  padding: 12px 8px;
+  border: 2px solid #222;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.recipe-name {
+  border-bottom: 2px dotted #222;
+  margin-bottom: 1rem;
+  padding: 6px 0;
+}
+.recipe-name:hover {
+  background-color: #c4e0f9;
+}
+
+.recipe-name h3 {
+  margin: 10px;
 }
