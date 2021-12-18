@@ -1,5 +1,5 @@
 # strapi-recipes-v4
-Simple recipe app created with Strapi &amp; NextJS
+Simple recipe app created with Strapi &amp; NextJS. Updated for Strapi v4.0
 
 ### To run:
 1. Fork and clone this repository
